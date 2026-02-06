@@ -126,13 +126,21 @@ footer{
 
     nav {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
 
     nav button:not(.logo) {
-        min-width: 80px;
-        padding: 5px;
+        padding: 0 8px;
+        min-width: 0;
         font-size: 13px;
+    }
+
+    nav button.logo {
+        padding-right: 5px;
+        padding-left: 0;
+        min-width: 0;
     }
     
     .logo img {
