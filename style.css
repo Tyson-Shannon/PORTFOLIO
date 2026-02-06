@@ -36,6 +36,12 @@ nav {
     gap: 20px;
 }
 
+nav button:not(.logo) {
+    flex: 1;
+    min-width: 0;
+    padding: 0 10px;
+}
+
 button {
     background: none;
     border: 2px solid transparent;
