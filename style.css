@@ -116,3 +116,27 @@ footer{
     padding: 20px;
     text-align: center;
 }
+
+/* small screens */
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav button:not(.logo) {
+        min-width: 80px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+}
