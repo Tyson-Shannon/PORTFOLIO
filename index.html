@@ -9,9 +9,28 @@
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   </head>
   <body>
+    <header>
+        <nav>
+            <button class="logo" onclick="showPage(0)"><img src="./images/TSLogo.png" alt="TS Logo" width="50" height="50"></button>
+            <button onclick="showPage(1)">About</button>
+            <button onclick="showPage(2)">Projects</button>
+            <button onclick="showPage(3)">Contact</button>
+        </nav>
+    </header>
+
     <main>
-        <h1>Tyson Shannon</h1>  
+        <div class="deck">
+            <section class="page active"><h1>Home</h1></section>
+            <section class="page"><h1>About</h1></section>
+            <section class="page"><h1>Projects</h1></section>
+            <section class="page"><h1>Contact</h1></section>
+        </div> 
     </main>
+
+    <footer>
+        <p>&copy 2026 Tyson Shannon</p>
+    </footer>
+
     <script src="index.js"></script>
   </body>
 </html>
