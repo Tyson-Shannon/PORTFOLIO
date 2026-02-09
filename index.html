@@ -20,7 +20,70 @@
 
     <main>
         <div class="deck">
-            <section class="page active"><h1>Home</h1></section>
+            <!-- home page -->
+            <section class="page active" id="home">
+                <div><h1>Welcome to Tyson's page!</h1></div>
+
+                <div class="minesweeper-wrap">
+                    <div id="minesweeper-overlay">
+                        <h2>Minesweeper</h2>
+                        <button class="start-btn" onclick="minesweeperStartGame()">Start Game</button>
+                    </div>
+                    <div id="minesweeper-ui" style="display: none;">
+                        <div class="game-stats">
+                            <span>🚩 <span id="mine-count">10</span></span>
+                            <button onclick="minesweeperInitGame()">Reset</button>
+                            <button onclick="minesweeperEndGame('Ended')">End</button>  
+                        </div>
+                        <div class="game-stats">
+                                <span>⏱ <span id="minesweeper-timer">00:00</span></span>
+                                <button onclick="minesweeperFlagMode()">🚩 Flag</button>
+                                <button onclick="minesweeperDigMode()">⛏ Dig</button>
+                            </div>
+                        <div id="minesweeper-board"></div>
+                    </div>
+                </div>
+
+                <div><h2>What I Do</h2></div>
+                <div>
+                    <ul>
+                        <li>💻 Fullstack Software Development</li>
+                        <li>🔐 Cybersecurity</li>
+                        <li>📊 Data Visualization</li>
+                    </ul>
+                </div>
+
+                <div><h2>Some of My Skills</h2></div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Languages</th>
+                            <th>Tools</th>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>Linux</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>Git & Github</td>
+                        </tr>
+                        <tr>
+                            <td>C/C++/C#</td>
+                            <td>VirtualBox</td>
+                        </tr>
+                        <tr>
+                            <td>Ruby</td>
+                            <td>Azure</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>Oracle SQL</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
             <section class="page"><h1>About</h1></section>
             <section class="page"><h1>Projects</h1></section>
             <section class="page"><h1>Contact</h1></section>
@@ -28,9 +91,10 @@
     </main>
 
     <footer>
-        <p>&copy 2026 Tyson Shannon</p>
+        <p>&copy 2026 Tyson Shannon | Canada &#x1F1E8;&#x1F1E6;</p>
     </footer>
 
+    <script type="module" src="minesweeper.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
