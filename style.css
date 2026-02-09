@@ -37,7 +37,10 @@ h2 {
 }
 
 p {
-    line-height: 1.7;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-indent: 1.5em;
 }
 
 nav {
