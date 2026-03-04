@@ -94,9 +94,9 @@ button:focus {
 
 .page {
     position: absolute;
+    inset: 0;
     width: 100%;
-    height: auto;
-    min-height: 100%;
+    min-height: auto;
     background: white;
     border-radius: 15px;
     display: flex;
@@ -117,7 +117,6 @@ button:focus {
     opacity: 1;
     transform: rotateX(0deg) translateZ(0);
     pointer-events: all;
-    overflow-y: auto;
     position: relative;
 }
 
@@ -125,6 +124,21 @@ button:focus {
 .page.exit {
     transform: rotateX(90deg) translateZ(-200px);
     opacity: 0;
+}
+
+.resume {
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.resumeList {
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+strong {
+    color: #001a3e;
 }
 
 main {
